@@ -7,10 +7,10 @@ module.exports = (sequelize, DataTypes) => {
      * This method is not a part of Sequelize lifecycle.
      * The `models/index` file will call this method automatically.
      */
-     static associate(models) {
+    static associate(models) {
       space.belongsTo(models.user);
-      space.hasMany(models.story)
-    };
+      space.hasMany(models.story);
+    }
   }
   space.init(
     {
